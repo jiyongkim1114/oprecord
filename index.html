@@ -22,61 +22,55 @@ body{font-family:'Apple SD Gothic Neo','Noto Sans KR',-apple-system,sans-serif;b
 .left::-webkit-scrollbar-thumb{background:var(--bd);border-radius:10px}
 .sec{background:var(--sur);border:1px solid var(--bd);border-radius:var(--r);padding:12px 14px;margin-bottom:10px}
 .sec-title{font-size:10px;font-weight:700;color:var(--mu);letter-spacing:.09em;text-transform:uppercase;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:5px}
-.sub{font-size:11px;font-weight:700;color:var(--mu);margin:9px 0 5px}
-.sub:first-of-type{margin-top:0}
-.hint{font-size:10px;color:var(--hi);margin-bottom:5px;line-height:1.5}
+.sub{font-size:11px;font-weight:700;color:var(--mu);margin:10px 0 5px}
+.sub.first{margin-top:0}
+.hint{font-size:10px;color:var(--hi);margin-bottom:6px;line-height:1.5}
 .chips{display:flex;flex-wrap:wrap;gap:5px}
-.chip{padding:6px 14px;border:1.5px solid var(--bd);border-radius:22px;font-size:13px;font-weight:500;cursor:pointer;background:#f7f9fd;color:var(--mu);transition:all .1s;white-space:nowrap;user-select:none;font-family:inherit}
+.chip{padding:6px 14px;border:1.5px solid var(--bd);border-radius:22px;font-size:13px;font-weight:500;cursor:pointer;background:#f7f9fd;color:var(--mu);transition:all .1s;white-space:nowrap;user-select:none}
 .chip:hover:not(.sel){border-color:var(--gm);color:var(--g);background:var(--gbg)}
 .chip.sel{background:var(--g);color:#fff;border-color:var(--g)}
-#seg-chips .chip,#ln-chips .chip{font-size:12px;padding:5px 12px}
-select{width:100%;border:1.5px solid var(--bd);border-radius:var(--rs);padding:7px 9px;font-size:13px;font-family:inherit;color:var(--tx);background:var(--sur);outline:none;cursor:pointer}
-select:focus{border-color:var(--gm)}
+.chip.sm{font-size:12px;padding:5px 12px}
+select.big{width:100%;border:1.5px solid var(--bd);border-radius:var(--rs);padding:7px 9px;font-size:13px;font-family:inherit;color:var(--tx);background:var(--sur);outline:none;cursor:pointer}
 
-/* Vessel rows: label | color | size | count | hem | rm */
-.v-head{display:grid;grid-template-columns:1fr 78px 50px 38px 88px 22px;gap:4px;margin-bottom:4px}
-.v-head span{font-size:10px;color:var(--hi);font-weight:600}
-.v-row{display:grid;grid-template-columns:1fr 78px 50px 38px 88px 22px;gap:4px;align-items:center;margin-bottom:5px}
+.v-head,.v-row{display:grid;grid-template-columns:1fr 110px 62px 44px 92px 24px;gap:4px}
+.v-head{margin-bottom:4px}
+.v-head span,.f-head span{font-size:10px;color:var(--hi);font-weight:600}
+.v-row{align-items:center;margin-bottom:5px}
 
-/* Fissure groups */
 .f-group{background:#f4f6fc;border:1px solid var(--bd);border-radius:var(--rs);padding:8px 10px;margin-bottom:7px}
-.f-group-top{display:grid;grid-template-columns:1fr 22px;gap:4px;align-items:center;margin-bottom:6px}
-.f-sub-head{display:grid;grid-template-columns:80px 52px 40px 22px;gap:4px;margin-bottom:4px}
-.f-sub-head span{font-size:10px;color:var(--hi);font-weight:600}
-.f-sub-row{display:grid;grid-template-columns:80px 52px 40px 22px;gap:4px;align-items:center;margin-bottom:4px}
+.f-top{display:grid;grid-template-columns:1fr 24px;gap:4px;align-items:center;margin-bottom:6px}
+.f-head,.f-row{display:grid;grid-template-columns:120px 66px 48px 24px;gap:4px}
+.f-head{margin-bottom:4px}
+.f-row{align-items:center;margin-bottom:4px}
 
-.r-in{border:1.5px solid var(--bd);border-radius:var(--rs);padding:5px 6px;font-size:11px;font-family:inherit;color:var(--tx);background:var(--sur);outline:none;width:100%}
+.r-in{border:1.5px solid var(--bd);border-radius:var(--rs);padding:5px 6px;font-size:12px;font-family:inherit;color:var(--tx);background:var(--sur);outline:none;width:100%}
 .r-in:focus{border-color:var(--gm)}
 input[type=number].r-in{text-align:center;padding:5px 2px}
-.rm{width:22px;height:22px;border:none;background:transparent;cursor:pointer;color:var(--hi);font-size:15px;border-radius:4px;display:flex;align-items:center;justify-content:center;padding:0;flex-shrink:0}
+.rm{width:24px;height:24px;border:none;background:transparent;cursor:pointer;color:var(--hi);font-size:16px;border-radius:4px;display:flex;align-items:center;justify-content:center;padding:0}
 .rm:hover{background:#fee2e2;color:#c33}
-.add-btn{font-size:11px;padding:5px 12px;border:1.5px dashed var(--bd);border-radius:var(--rs);background:transparent;cursor:pointer;color:var(--hi);font-family:inherit;margin-top:3px;transition:all .1s;display:inline-block}
+.add-btn{font-size:11px;padding:5px 12px;border:1.5px dashed var(--bd);border-radius:var(--rs);background:transparent;cursor:pointer;color:var(--hi);font-family:inherit;margin-top:3px}
 .add-btn:hover{border-color:var(--gm);color:var(--g);background:var(--gbg)}
-.f-add-st{font-size:11px;padding:4px 9px;border:1.5px dashed var(--gm);border-radius:5px;background:transparent;cursor:pointer;color:var(--g);font-family:inherit;margin-top:3px;transition:all .1s}
-.f-add-st:hover{background:var(--gbg)}
+.add-st{font-size:11px;padding:4px 9px;border:1.5px dashed var(--gm);border-radius:5px;background:transparent;cursor:pointer;color:var(--g);font-family:inherit;margin-top:3px}
+.add-st:hover{background:var(--gbg)}
 
 .qty-row{display:none;align-items:center;gap:7px;margin-top:5px;padding:6px 10px;background:var(--bg);border-radius:var(--rs)}
 .qty-row label{font-size:12px;color:var(--mu)}
-.qty-row input[type=number]{width:48px;text-align:center;border:1.5px solid var(--bd);border-radius:var(--rs);padding:4px;font-size:13px;font-family:inherit;background:var(--sur);color:var(--tx);outline:none}
+.qty-row input{width:48px;text-align:center;border:1.5px solid var(--bd);border-radius:var(--rs);padding:4px;font-size:13px;font-family:inherit;outline:none}
 .pw-box{background:#f5f0e5;border:1.5px solid #d0bc80;border-radius:var(--rs);padding:10px 12px;margin-top:8px}
-.pw-box-title{font-size:10px;font-weight:700;color:#7a6520;margin-bottom:8px;text-transform:uppercase;letter-spacing:.07em}
+.pw-title{font-size:10px;font-weight:700;color:#7a6520;margin-bottom:8px;text-transform:uppercase;letter-spacing:.07em}
 .div{height:1px;background:var(--bd);margin:10px 0}
 
-/* RIGHT */
 .right{display:flex;flex-direction:column;background:#f8f9fc;overflow:hidden}
 .out-bar{padding:8px 12px;border-bottom:1px solid var(--bd);background:var(--sur);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
 .out-bar-title{font-size:10px;font-weight:700;color:var(--mu);letter-spacing:.07em;text-transform:uppercase}
-.btn-row{display:flex;gap:5px}
-.btn{padding:4px 10px;border:1px solid var(--bd);border-radius:5px;background:var(--sur);font-size:12px;cursor:pointer;font-family:inherit;color:var(--tx);transition:all .1s}
+.btn{padding:4px 10px;border:1px solid var(--bd);border-radius:5px;background:var(--sur);font-size:12px;cursor:pointer;font-family:inherit;color:var(--tx)}
 .btn:hover{border-color:var(--gm);color:var(--g)}
 .btn-p{background:var(--g);color:#fff;border-color:var(--g)}
-.btn-p:hover{background:var(--gd);color:#fff;border-color:var(--gd)}
+.btn-p:hover{background:var(--gd);color:#fff}
 .btn-p.done{background:#1e6b3a;border-color:#1e6b3a}
-.out-box{flex:1;overflow-y:auto;padding:12px 14px;font-family:'Courier New',Courier,monospace;font-size:11px;line-height:1.8;white-space:pre-wrap;color:var(--tx)}
-.out-box::-webkit-scrollbar{width:4px}
-.out-box::-webkit-scrollbar-thumb{background:var(--bd);border-radius:10px}
+.out-box{flex:1;overflow-y:auto;padding:12px 14px;font-family:'Courier New',Courier,monospace;font-size:11px;line-height:1.8;white-space:pre-wrap}
 .placeholder{font-size:12px;color:var(--hi);text-align:center;margin-top:50px;line-height:2.2;font-family:inherit}
-@media print{.hdr,.left,.out-bar{display:none!important}.layout{display:block;height:auto}.right{display:block}.out-box{font-size:12pt;line-height:2.1;padding:0}}
+@media print{.hdr,.left,.out-bar{display:none!important}.layout{display:block;height:auto}.out-box{font-size:12pt}}
 </style>
 </head>
 <body>
@@ -94,24 +88,25 @@ input[type=number].r-in{text-align:center;padding:5px 2px}
 <!-- 포트 -->
 <div class="sec">
   <div class="sec-title">🔌 포트 설정</div>
-  <div class="chips" id="port-chips">
+  <div class="chips">
     <div class="chip" onclick="pick('port',this,'Y')">Y 포트</div>
     <div class="chip" onclick="pick('port',this,'R')">R 포트</div>
   </div>
 </div>
 
-<!-- 수술 범위 -->
+<!-- 수술 범위 + 브랜드 + 선행 wedge -->
 <div class="sec">
   <div class="sec-title">🫁 수술 범위</div>
-  <div class="sub">수술 종류</div>
+  <div class="sub first">수술 종류</div>
   <div class="chips" id="type-chips">
     <div class="chip" onclick="pickType(this,'lobectomy')">Lobectomy</div>
     <div class="chip" onclick="pickType(this,'segmentectomy')">Segmentectomy</div>
     <div class="chip" onclick="pickType(this,'wedge')">Wedge Resection</div>
   </div>
-  <div id="lob-sec" style="display:none">
+
+  <div id="lobe-sec" style="display:none">
     <div class="sub">엽 선택</div>
-    <div class="chips" id="lob-chips">
+    <div class="chips" id="lobe-chips">
       <div class="chip" onclick="pickLobe(this,'RUL')">RUL</div>
       <div class="chip" onclick="pickLobe(this,'RML')">RML</div>
       <div class="chip" onclick="pickLobe(this,'RLL')">RLL</div>
@@ -119,111 +114,96 @@ input[type=number].r-in{text-align:center;padding:5px 2px}
       <div class="chip" onclick="pickLobe(this,'LLL')">LLL</div>
     </div>
   </div>
-  <div id="seg-sec" style="display:none">
-    <div class="sub">엽 선택</div>
-    <select id="seg-lobe" onchange="updateSegList()">
-      <option value="">— 엽을 선택하세요 —</option>
-      <option>RUL</option><option>RML</option><option>RLL</option><option>LUL</option><option>LLL</option>
-    </select>
-    <div id="seg-sub" class="sub" style="display:none">분절 선택</div>
+  <div id="seg-wrap" style="display:none">
+    <div class="sub">분절 선택</div>
     <div class="chips" id="seg-chips"></div>
   </div>
-  <div id="wedge-sec" style="display:none">
-    <div class="sub">위치</div>
-    <div class="chips" id="wedge-chips">
-      <div class="chip" onclick="pickLobe(this,'RUL')">RUL</div>
-      <div class="chip" onclick="pickLobe(this,'RML')">RML</div>
-      <div class="chip" onclick="pickLobe(this,'RLL')">RLL</div>
-      <div class="chip" onclick="pickLobe(this,'LUL')">LUL</div>
-      <div class="chip" onclick="pickLobe(this,'LLL')">LLL</div>
-    </div>
+
+  <div class="div"></div>
+  <div class="sub first">스테플러 브랜드</div>
+  <div class="chips" id="brand-chips">
+    <div class="chip sel" onclick="pick('brand',this,'Echelon');rebuildAll()">Echelon</div>
+    <div class="chip" onclick="pick('brand',this,'Signia');rebuildAll()">Signia</div>
   </div>
-  <!-- 선행 Wedge -->
-  <div id="prior-wedge-wrap" style="display:none">
+
+  <div id="pw-wrap" style="display:none">
     <div class="div"></div>
-    <div class="sub">선행 Wedge (선택)</div>
-    <div class="chips" id="pw-chips">
+    <div class="sub first">선행 Wedge (pathology 확인 후 절제)</div>
+    <div class="chips">
       <div class="chip" onclick="pick('priorWedge',this,'yes')">시행함</div>
       <div class="chip sel" onclick="pick('priorWedge',this,'no')">해당 없음</div>
     </div>
     <div id="pw-detail" style="display:none">
       <div class="pw-box">
-        <div class="pw-box-title">선행 Wedge 스테플러</div>
-        <div id="pw-f-list"></div>
-        <button class="add-btn" onclick="addPwGroup()">＋ 항목 추가</button>
+        <div class="pw-title">선행 Wedge 스테플러</div>
+        <div id="pw-list"></div>
         <div class="div"></div>
         <div style="font-size:11px;font-weight:700;color:var(--mu);margin-bottom:5px">Pathology 결과</div>
-        <div class="chips" id="pw-path-chips">
-          <div class="chip sel" style="font-size:12px;padding:5px 11px" onclick="pickPath(this,'adenocarcinoma')">Adenocarcinoma</div>
-          <div class="chip" style="font-size:12px;padding:5px 11px" onclick="pickPath(this,'squamous cell carcinoma')">Squamous cell ca.</div>
-          <div class="chip" style="font-size:12px;padding:5px 11px" onclick="pickPath(this,'malignancy')">Malignancy (기타)</div>
+        <div class="chips" id="pw-path">
+          <div class="chip sm sel" onclick="pick('pwPath',this,'adenocarcinoma')">Adenocarcinoma</div>
+          <div class="chip sm" onclick="pick('pwPath',this,'squamous cell carcinoma')">Squamous cell ca.</div>
+          <div class="chip sm" onclick="pick('pwPath',this,'malignancy')">Malignancy (기타)</div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- 스테플러 브랜드 -->
-<div class="sec">
-  <div class="sec-title">🔧 스테플러 브랜드</div>
-  <div class="chips" id="brand-chips">
-    <div class="chip sel" onclick="pick('brand',this,'Echelon');rebuildAll()">Echelon</div>
-    <div class="chip" onclick="pick('brand',this,'Signia');rebuildAll()">Signia</div>
-  </div>
-</div>
-
-<!-- Fissure Division -->
+<!-- Fissure -->
 <div class="sec">
   <div class="sec-title">✂️ Fissure Division</div>
-  <div class="hint">항목 하나 = 출력 한 줄. 한 줄에 스테플러 여러 개 조합 가능 (＋ 스테플러 추가)</div>
+  <div class="hint">항목 하나 = 출력 한 줄. ＋ 스테플러 추가로 한 줄에 여러 스테플러 조합</div>
   <div id="fissure-list"></div>
-  <button class="add-btn" onclick="addFissureGroup()">＋ 항목 추가</button>
+  <button class="add-btn" onclick="addGroup('f')">＋ 항목 추가</button>
 </div>
 
-<!-- Vessel & Bronchus -->
+<!-- Vessel -->
 <div class="sec">
   <div class="sec-title">💉 Vessel &amp; Bronchus Division</div>
-  <div class="hint">개수 0 + Hem-o-lok 선택 시 → "with Hem-o-lok ligation" 단독 출력</div>
+  <div class="hint">개수 0 + Hem-o-lok → "division with Hem-o-lok ligation" 출력</div>
   <div class="v-head"><span>vessel / 용도</span><span>색상</span><span>size</span><span>개수</span><span>Hem-o-lok</span><span></span></div>
   <div id="vessel-list"></div>
   <button class="add-btn" onclick="addVessel()">＋ 항목 추가</button>
 </div>
 
-<!-- Parenchyma Division -->
+<!-- ICG -->
+<div class="sec" id="icg-sec" style="display:none">
+  <div class="sec-title">🟢 ICG (Intersegmental plane 확인)</div>
+  <div class="chips">
+    <div class="chip" onclick="pick('icg',this,'yes')">사용</div>
+    <div class="chip sel" onclick="pick('icg',this,'no')">미사용</div>
+  </div>
+</div>
+
+<!-- Parenchyma -->
 <div class="sec">
-  <div class="sec-title">🫁 Parenchyma Division</div>
-  <div class="hint">항목 하나 = 출력 한 줄. 한 줄에 스테플러 여러 개 조합 가능 (＋ 스테플러 추가)</div>
-  <div id="parenchyma-list"></div>
-  <button class="add-btn" onclick="addParenchymaGroup()">＋ 항목 추가</button>
+  <div class="sec-title">🫁 Parenchyma / Intersegmental Plane Division</div>
+  <div class="hint">항목 하나 = 출력 한 줄. ＋ 스테플러 추가로 한 줄에 여러 스테플러 조합</div>
+  <div id="paren-list"></div>
+  <button class="add-btn" onclick="addGroup('p')">＋ 항목 추가</button>
 </div>
 
 <!-- Frozen -->
 <div class="sec">
   <div class="sec-title">🧪 Frozen Bx</div>
-  <div class="sub">Parenchymal margin</div>
-  <div class="chips" id="fr-par" style="margin-bottom:8px">
+  <div class="sub first">Parenchymal margin</div>
+  <div class="chips">
     <div class="chip sel" onclick="pick('frPar',this,'neg')">Negative (−)</div>
     <div class="chip" onclick="pick('frPar',this,'pos')">Positive (+)</div>
     <div class="chip" onclick="pick('frPar',this,'none')">미시행</div>
   </div>
   <div class="sub">Bronchial margin</div>
-  <div class="chips" id="fr-br" style="margin-bottom:8px">
+  <div class="chips">
     <div class="chip sel" onclick="pick('frBr',this,'neg')">Negative (−)</div>
     <div class="chip" onclick="pick('frBr',this,'pos')">Positive (+)</div>
     <div class="chip" onclick="pick('frBr',this,'none')">미시행</div>
   </div>
-  <!-- 병리 타입 -->
-  <div id="fr-path-wrap">
-    <div class="sub">Pathology type</div>
-    <div class="chips" id="fr-path-chips">
-      <div class="chip" onclick="pick('frPath',this,'ADC')">ADC</div>
-      <div class="chip" onclick="pick('frPath',this,'SQCC')">SQCC</div>
-      <div class="chip" onclick="pick('frPath',this,'LCNEC')">LCNEC</div>
-      <div class="chip" onclick="pick('frPath',this,'SCLC')">SCLC</div>
-      <div class="chip" onclick="pick('frPath',this,'Carcinoid')">Carcinoid</div>
-      <div class="chip" onclick="pick('frPath',this,'Others')">Others</div>
-      <div class="chip sel" onclick="pick('frPath',this,'none')">미선택</div>
-    </div>
+  <div class="sub">Pathology type</div>
+  <div class="chips">
+    <div class="chip" onclick="pick('frPath',this,'ADC')">ADC</div>
+    <div class="chip" onclick="pick('frPath',this,'SQCC')">SQCC</div>
+    <div class="chip" onclick="pick('frPath',this,'Others')">Others</div>
+    <div class="chip sel" onclick="pick('frPath',this,'none')">미선택</div>
   </div>
 </div>
 
@@ -237,34 +217,35 @@ input[type=number].r-in{text-align:center;padding:5px 2px}
 <!-- 마무리 재료 -->
 <div class="sec">
   <div class="sec-title">💧 마무리 재료</div>
-  <div class="sub">Tachosil (bronchial stump)</div>
-  <div class="chips" id="tach-chips" style="margin-bottom:8px">
+  <div class="sub first">Tachosil (bronchial stump)</div>
+  <div class="chips">
     <div class="chip" onclick="pick('tachosil',this,'yes')">사용</div>
     <div class="chip sel" onclick="pick('tachosil',this,'no')">미사용</div>
   </div>
   <div class="sub">Fibrin Glue (LN dissection site)</div>
-  <div class="chips" id="glue-chips">
+  <div class="chips">
     <div class="chip" onclick="pick('glue',this,'yes')">사용</div>
     <div class="chip sel" onclick="pick('glue',this,'no')">미사용</div>
   </div>
   <div class="qty-row" id="glue-qty"><label>개수</label><input type="number" id="glue-n" min="1" max="5" value="1" oninput="gen()"><label>개</label></div>
-  <div class="div"></div>
-  <div class="sub">Neovil (air leak site)</div>
-  <div class="chips" id="neovil-chips" style="margin-bottom:8px">
-    <div class="chip" onclick="pick('neovil',this,'yes')">사용</div>
-    <div class="chip sel" onclick="pick('neovil',this,'no')">미사용</div>
+  <div class="sub">Progel (air leak site)</div>
+  <div class="chips">
+    <div class="chip" onclick="pick('progel',this,'yes')">사용</div>
+    <div class="chip sel" onclick="pick('progel',this,'no')">미사용</div>
   </div>
-  <div class="sub">유착방지제</div>
-  <div class="chips" id="adh-chips">
+  <div class="div"></div>
+  <div class="sub first">유착방지제</div>
+  <div class="chips">
     <div class="chip" onclick="pick('adh',this,'Mediclo')">Mediclo</div>
     <div class="chip" onclick="pick('adh',this,'Interblok')">Interblok</div>
     <div class="chip" onclick="pick('adh',this,'Medicurtain')">Medicurtain</div>
+    <div class="chip" onclick="pick('adh',this,'Surgishield')">Surgishield</div>
     <div class="chip sel" onclick="pick('adh',this,'none')">미사용</div>
   </div>
   <div class="qty-row" id="adh-qty"><label>개수</label><input type="number" id="adh-n" min="1" max="5" value="1" oninput="gen()"><label>개</label></div>
   <div class="div"></div>
-  <div class="sub">Welpass inj.</div>
-  <div class="chips" id="welpass-chips">
+  <div class="sub first">Welpass inj.</div>
+  <div class="chips">
     <div class="chip" onclick="pick('welpass',this,'yes')">사용</div>
     <div class="chip sel" onclick="pick('welpass',this,'no')">미사용</div>
   </div>
@@ -273,448 +254,280 @@ input[type=number].r-in{text-align:center;padding:5px 2px}
 <!-- 전실 -->
 <div class="sec">
   <div class="sec-title">🚪 전실</div>
-  <div class="chips" id="tr-chips">
+  <div class="chips">
     <div class="chip sel" onclick="pick('tr',this,'RR')">RR</div>
     <div class="chip" onclick="pick('tr',this,'ICU')">ICU</div>
   </div>
 </div>
 
-</div><!-- end left -->
+</div>
 
 <div class="right">
   <div class="out-bar">
     <span class="out-bar-title">📄 수술 기록 본문</span>
-    <div class="btn-row">
+    <div style="display:flex;gap:5px">
       <button class="btn" onclick="window.print()">🖨 인쇄</button>
       <button class="btn btn-p" id="copy-btn" onclick="doCopy()">📋 복사</button>
     </div>
   </div>
-  <div class="out-box" id="output"><div class="placeholder">👈 왼쪽에서<br>옵션을 선택하면<br>자동 생성됩니다.</div></div>
+  <div class="out-box" id="output"></div>
 </div>
 </div>
 
 <script>
-/* ════ STATE ════ */
+/* ═══ STATE ═══ */
 const S={
-  port:'', opType:'', lobe:'', seg:'',
-  brand:'Echelon', frPar:'neg', frBr:'neg', frPath:'none',
-  ln:new Set(),
-  vessels:[],   // {label,color,size,count,hem}
-  fGroups:[],   // fissure {label, staples:[{color,size,count}]}
-  pGroups:[],   // parenchyma {label, staples:[{color,size,count}]}
-  pwGroups:[],  // prior wedge {label, staples:[{color,size,count}]}
-  tachosil:'no', glue:'no', adh:'none', welpass:'no', tr:'RR',
-  priorWedge:'no', pwPath:'adenocarcinoma'
+  port:'',opType:'',lobe:'',seg:null,brand:'Echelon',
+  fGroups:[],pGroups:[],pwStaples:[],vessels:[],
+  icg:'no',frPar:'neg',frBr:'neg',frPath:'none',ln:new Set(),
+  tachosil:'no',glue:'no',progel:'no',adh:'none',welpass:'no',tr:'RR',
+  priorWedge:'no',pwPath:'adenocarcinoma'
 };
 
-/* ════ CONSTANTS ════ */
+/* ═══ CONSTANTS ═══ */
 const PORT={
-  Y:{Rt:{cam:'8th ICS MAL',work:'5th ICS MAL, 6th ICS AAL'},Lt:{cam:'7th ICS AAL',work:'5th ICS MAL, 6th ICS AAL'}},
-  R:{Rt:{cam:'7th ICS MAL',work:'6th ICS AAL, 5th ICS MAL'},Lt:{cam:'7th ICS MAL',work:'6th ICS AAL, 5th ICS MAL'}}
+  Y:{cam:'7th ICS AXL',work:'4th ICS MXL, 8th ICS PXL'},
+  R:{cam:'8th ICS MXL',work:'5th ICS AXL, 6th ICS PXL'}
 };
 const SEG_MAP={
-  RUL:['Apical (S1)','Posterior (S2)','Anterior (S3)'],
-  RML:['Lateral (S4)','Medial (S5)'],
-  RLL:['Superior (S6)','Medial basal (S7)','Anterior basal (S8)','Lateral basal (S9)','Posterior basal (S10)'],
-  LUL:['Apicoposterior (S1+2)','Anterior (S3)','Superior lingula (S4)','Inferior lingula (S5)'],
-  LLL:['Superior (S6)','Anteromedial basal (S7+8)','Lateral basal (S9)','Posterior basal (S10)']
-};
-const LN_DEFAULT={
-  RUL:['2R','4R','7','10','11','11s','12'], RML:['2R','4R','7','10','11','11s','12'],
-  RLL:['4R','7','8','9','10','11','11s','12'],
-  LUL:['5','6','7','10','11','11s','12'], LLL:['7','8','9','10','11','11s','12']
+  RUL:[['Apical','S1'],['Posterior','S2'],['Anterior','S3']],
+  RML:[['Lateral','S4'],['Medial','S5']],
+  RLL:[['Superior','S6'],['Medial basal','S7'],['Anterior basal','S8'],['Lateral basal','S9'],['Posterior basal','S10'],['Basal','S7-10']],
+  LUL:[['Anterior','S3'],['Apicoposterior','S1+2'],['Upper division','S1+2+3'],['Lingular','S4+5']],
+  LLL:[['Superior','S6'],['Anteromedial basal','S7+8'],['Lateral basal','S9'],['Posterior basal','S10'],['Basal','S7-10']]
 };
 const LN_ALL=['2R','3','4R','4L','5','6','7','8','9','10','11','11i','11s','12'];
-// Echelon: Vascular(White)=35mm only | White=45/60 | Gray=45 only | Gold/Blue/Black/Green=45/60
-// Signia:  Tan=45mm only | Purple/Blue/Green=45/60mm (no 30mm)
-const SPEC={
-  Echelon:{vc:'Vascular(White)',pc:'Gold',
-    colors:['Vascular(White)','White','Gray','Gold','Blue','Black','Green'],
-    sizes:{'Vascular(White)':['35'],'White':['45','60'],'Gray':['45'],'Gold':['45','60'],'Blue':['45','60'],'Black':['45','60'],'Green':['45','60']}},
-  Signia:{vc:'Tan',pc:'Purple',
-    colors:['Tan','Purple','Blue','Green'],
-    sizes:{'Tan':['45'],'Purple':['45','60'],'Blue':['45','60'],'Green':['45','60']}}
+const LN_DEFAULT={
+  RUL:['2R','4R','7','10','11','11s','12'],RML:['2R','4R','7','10','11','11i','12'],
+  RLL:['4R','7','8','9','10','11','11i','12'],
+  LUL:['5','6','7','10','11','12'],LLL:['7','8','9','10','11','12']
 };
-function defVC(){return SPEC[S.brand].vc}
-function defPC(){return SPEC[S.brand].pc}
-function sizesFor(b,c){return SPEC[b].sizes[c]||['45','60']}
-function defSz(b,c){return sizesFor(b,c)[0]}
-
-/* ════ LN ════ */
-function renderLN(){
-  const w=document.getElementById('ln-chips');w.innerHTML='';
-  LN_ALL.forEach(n=>{
-    const el=document.createElement('div');
-    el.className='chip'+(S.ln.has(n)?' sel':'');
-    el.textContent='#'+n;
-    el.onclick=()=>{S.ln.has(n)?S.ln.delete(n):S.ln.add(n);el.classList.toggle('sel');gen()};
-    w.appendChild(el);
-  });
+/* Stapler specs
+   Echelon: Vascular White = 35mm only / 나머지 45·60mm (기본 45)
+   Signia : Curved Tan(기본 45) / Purple(fissure·parenchyma 60, bronchus 45) / Black  — 30mm 없음 */
+const SPEC={
+  Echelon:{colors:['Vascular White','White','Gray','Gold','Blue','Black','Green'],vessel:'Vascular White',bronchus:'Gold',paren:'Gold',paren2:'Blue'},
+  Signia:{colors:['Curved Tan','Purple','Black'],vessel:'Curved Tan',bronchus:'Purple',paren:'Purple',paren2:'Black'}
+};
+function sizesFor(b,c){return c==='Vascular White'?['35']:['45','60']}
+function defSize(b,c,ctx){
+  if(c==='Vascular White')return'35';
+  if(b==='Echelon')return'45';
+  if(c==='Curved Tan'||ctx==='vessel')return'45';
+  return'60';
 }
-function setLNDef(lobe){S.ln=new Set(LN_DEFAULT[lobe]||[]);renderLN()}
+function st(c,ctx){return{color:c,size:defSize(S.brand,c,ctx),count:1}}
 
-/* ════ SELECT HELPERS ════ */
-function colOpts(b,sel){return SPEC[b].colors.map(c=>`<option${c===sel?' selected':''}>${c}</option>`).join('')}
-function szOpts(b,c,sel){const ss=sizesFor(b,c);if(!ss.includes(sel))sel=ss[0];return ss.map(s=>`<option${s===sel?' selected':''}>${s}mm</option>`).join('')}
+/* ═══ HELPERS ═══ */
+function el(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+function colorSelect(cur){const s=el('select','r-in');SPEC[S.brand].colors.forEach(c=>{const o=el('option',null,c);o.value=c;if(c===cur)o.selected=true;s.appendChild(o)});return s}
+function sizeFill(sel,c,cur){sel.innerHTML='';sizesFor(S.brand,c).forEach(z=>{const o=el('option',null,z+'mm');o.value=z;if(z===cur)o.selected=true;sel.appendChild(o)})}
+function segName(){return S.seg?S.seg[0]:''}
 
-/* ════ VESSELS ════ */
+/* ═══ DEFAULTS ═══ */
 function defaultVessels(){
-  const vc=defVC(),pc=defPC(),lobe=S.lobe;if(!lobe)return[];
-  const vcSz=defSz(S.brand,vc);
-  if(S.opType==='lobectomy')return[
-    {label:`${lobe} PV division`,color:vc,size:vcSz,count:1,hem:false},
-    {label:`${lobe} PA division`,color:vc,size:vcSz,count:1,hem:false},
-    {label:`${lobe} Br division`,color:pc,size:'45',count:1,hem:false},
+  const L=S.lobe;if(!L||S.opType==='wedge')return[];
+  const sp=SPEC[S.brand];
+  const pre=S.opType==='segmentectomy'?`${L} ${segName()?segName()+' ':''}segmental`:L;
+  const v=c=>({color:c,size:defSize(S.brand,c,'vessel'),count:1,hem:false});
+  return[
+    {label:`${pre} PV division`,...v(sp.vessel)},
+    {label:`${pre} PA division`,...v(sp.vessel)},
+    {label:`${pre} bronchus division`,...v(sp.bronchus)}
   ];
-  if(S.opType==='segmentectomy'){
-    const seg=S.seg?S.seg.split(' ')[0]:'';
-    const pre=seg?`${lobe} ${seg} segmental`:`${lobe} segmental`;
-    return[
-      {label:`${pre} PV division`,color:vc,size:vcSz,count:1,hem:false},
-      {label:`${pre} PA division`,color:vc,size:vcSz,count:1,hem:false},
-      {label:`${pre} Br division`,color:pc,size:'45',count:1,hem:false},
-    ];
-  }
+}
+function defaultF(){
+  const sp=SPEC[S.brand];
+  if(S.opType==='lobectomy')return[{label:'Fissure division',staples:S.brand==='Echelon'?[st(sp.paren,'p'),st(sp.paren2,'p')]:[st(sp.paren,'p')]}];
   return[];
 }
+function defaultP(){
+  const sp=SPEC[S.brand];
+  if(S.opType==='segmentectomy')return[{label:'Intersegmental plane division',staples:[st(sp.paren,'p'),st(sp.paren2,'p')]}];
+  if(S.opType==='wedge')return[{label:`${S.lobe||''} wedge resection`.trim(),staples:[st(sp.paren,'p')]}];
+  return[];
+}
+function rebuildAll(){
+  S.vessels=defaultVessels();S.fGroups=defaultF();S.pGroups=defaultP();
+  S.pwStaples=[st(SPEC[S.brand].paren,'p')];
+  renderAll();
+}
 
-function renderVessels(){
-  const list=document.getElementById('vessel-list');list.innerHTML='';
-  S.vessels.forEach((v,i)=>{
-    const row=document.createElement('div');row.className='v-row';
-    const colId=`vc${i}`,szId=`vs${i}`;
-    row.innerHTML=
-      `<input class="r-in" type="text" value="${v.label}" oninput="S.vessels[${i}].label=this.value;gen()">` +
-      `<select class="r-in" id="${colId}">${colOpts(S.brand,v.color)}</select>` +
-      `<select class="r-in" id="${szId}">${szOpts(S.brand,v.color,v.size)}</select>` +
-      `<input class="r-in" type="number" min="0" max="9" value="${v.count}" oninput="S.vessels[${i}].count=+this.value;gen()">` +
-      `<select class="r-in" id="vh${i}">
-        <option value="no"${!v.hem?' selected':''}>없음</option>
-        <option value="yes"${v.hem?' selected':''}>Hem-o-lok</option>
-      </select>` +
-      `<button class="rm" onclick="S.vessels.splice(${i},1);renderVessels();gen()">×</button>`;
-    list.appendChild(row);
-    // attach events after DOM insert
-    document.getElementById(colId).addEventListener('change',function(){onVCol(i,this.value)});
-    document.getElementById(szId).addEventListener('change',function(){S.vessels[i].size=this.value.replace('mm','');gen()});
-    document.getElementById('vh'+i).addEventListener('change',function(){S.vessels[i].hem=this.value==='yes';gen()});
+/* ═══ STAPLE ROWS (shared) ═══ */
+function renderStapleRows(container,staples,rerender){
+  const head=el('div','f-head');['색상','size','개수',''].forEach(t=>head.appendChild(el('span',null,t)));
+  if(staples.length)container.appendChild(head);
+  staples.forEach((s,si)=>{
+    const row=el('div','f-row');
+    const cs=colorSelect(s.color);
+    const ss=el('select','r-in');sizeFill(ss,s.color,s.size);
+    const cn=el('input','r-in');cn.type='number';cn.min='1';cn.max='9';cn.value=s.count;
+    const rm=el('button','rm','×');
+    cs.onchange=()=>{s.color=cs.value;s.size=defSize(S.brand,s.color,'p');sizeFill(ss,s.color,s.size);gen()};
+    ss.onchange=()=>{s.size=ss.value;gen()};
+    cn.oninput=()=>{s.count=+cn.value;gen()};
+    rm.onclick=()=>{staples.splice(si,1);rerender();gen()};
+    row.append(cs,ss,cn,rm);container.appendChild(row);
+  });
+  const add=el('button','add-st','＋ 스테플러 추가');
+  add.onclick=()=>{staples.push(st(SPEC[S.brand].paren,'p'));rerender();gen()};
+  container.appendChild(add);
+}
+function renderGroups(id,groups){
+  const box=document.getElementById(id);box.innerHTML='';
+  const rerender=()=>renderGroups(id,groups);
+  groups.forEach((g,gi)=>{
+    const wrap=el('div','f-group');
+    const top=el('div','f-top');
+    const lb=el('input','r-in');lb.type='text';lb.value=g.label;lb.oninput=()=>{g.label=lb.value;gen()};
+    const rm=el('button','rm','×');rm.onclick=()=>{groups.splice(gi,1);rerender();gen()};
+    top.append(lb,rm);wrap.appendChild(top);
+    renderStapleRows(wrap,g.staples,rerender);
+    box.appendChild(wrap);
   });
 }
-function onVCol(i,color){
-  S.vessels[i].color=color;
-  const ss=sizesFor(S.brand,color);
-  if(!ss.includes(S.vessels[i].size))S.vessels[i].size=ss[0];
-  document.getElementById('vs'+i).innerHTML=szOpts(S.brand,color,S.vessels[i].size);
+function addGroup(type){
+  const sp=SPEC[S.brand];
+  if(type==='f'){S.fGroups.push({label:'Fissure division',staples:[st(sp.paren,'p')]});renderGroups('fissure-list',S.fGroups)}
+  else{S.pGroups.push({label:S.opType==='segmentectomy'?'Intersegmental plane division':'Parenchyma division',staples:[st(sp.paren,'p')]});renderGroups('paren-list',S.pGroups)}
   gen();
 }
+function renderPw(){
+  const box=document.getElementById('pw-list');box.innerHTML='';
+  renderStapleRows(box,S.pwStaples,renderPw);
+}
+
+/* ═══ VESSELS ═══ */
+function renderVessels(){
+  const box=document.getElementById('vessel-list');box.innerHTML='';
+  S.vessels.forEach((v,i)=>{
+    const row=el('div','v-row');
+    const lb=el('input','r-in');lb.type='text';lb.value=v.label;
+    const cs=colorSelect(v.color);
+    const ss=el('select','r-in');sizeFill(ss,v.color,v.size);
+    const cn=el('input','r-in');cn.type='number';cn.min='0';cn.max='9';cn.value=v.count;
+    const hm=el('select','r-in');[['no','없음'],['yes','Hem-o-lok']].forEach(([val,t])=>{const o=el('option',null,t);o.value=val;if((val==='yes')===v.hem)o.selected=true;hm.appendChild(o)});
+    const rm=el('button','rm','×');
+    lb.oninput=()=>{v.label=lb.value;gen()};
+    cs.onchange=()=>{v.color=cs.value;v.size=defSize(S.brand,v.color,'vessel');sizeFill(ss,v.color,v.size);gen()};
+    ss.onchange=()=>{v.size=ss.value;gen()};
+    cn.oninput=()=>{v.count=+cn.value;gen()};
+    hm.onchange=()=>{v.hem=hm.value==='yes';gen()};
+    rm.onclick=()=>{S.vessels.splice(i,1);renderVessels();gen()};
+    row.append(lb,cs,ss,cn,hm,rm);box.appendChild(row);
+  });
+}
 function addVessel(){
-  const vc=defVC();
-  S.vessels.push({label:`${S.lobe||''} PV division`,color:vc,size:defSz(S.brand,vc),count:1,hem:false});
+  const c=SPEC[S.brand].vessel;
+  S.vessels.push({label:`${S.lobe||''} PA division`.trim(),color:c,size:defSize(S.brand,c,'vessel'),count:1,hem:false});
   renderVessels();gen();
 }
 
-/* ════ FISSURE GROUPS ════
-   Each group → one output line:
-   "{label} using {Brand} {color1} {sz1}mm *{n1}ea + {color2} {sz2}mm *{n2}ea."
-   Key fix: all event listeners attached via addEventListener, NOT inline strings.
-════ */
-function makeFGroupEl(groups, gi, onRmGroup, onAddSt, onRmSt, onColChange){
-  const g=groups[gi];
-  const wrap=document.createElement('div');wrap.className='f-group';
-
-  // top row: label + rm group
-  const top=document.createElement('div');top.className='f-group-top';
-  const lbl=document.createElement('input');
-  lbl.className='r-in';lbl.type='text';lbl.value=g.label;lbl.style.fontSize='12px';
-  lbl.addEventListener('input',()=>{g.label=lbl.value;gen()});
-  const rmGrp=document.createElement('button');rmGrp.className='rm';rmGrp.textContent='×';
-  rmGrp.addEventListener('click',()=>onRmGroup(gi));
-  top.appendChild(lbl);top.appendChild(rmGrp);
-  wrap.appendChild(top);
-
-  // sub head
-  if(g.staples.length>0){
-    const head=document.createElement('div');head.className='f-sub-head';
-    head.innerHTML='<span>색상</span><span>size</span><span>개수</span><span></span>';
-    wrap.appendChild(head);
-  }
-
-  // staple sub-rows
-  g.staples.forEach((st,si)=>{
-    const srow=document.createElement('div');srow.className='f-sub-row';
-    const colSel=document.createElement('select');colSel.className='r-in';
-    colSel.innerHTML=colOpts(S.brand,st.color);
-    const szSel=document.createElement('select');szSel.className='r-in';
-    szSel.innerHTML=szOpts(S.brand,st.color,st.size);
-    const cntIn=document.createElement('input');
-    cntIn.className='r-in';cntIn.type='number';cntIn.min='1';cntIn.max='9';cntIn.value=st.count;
-    const rmSt=document.createElement('button');rmSt.className='rm';rmSt.textContent='×';
-
-    colSel.addEventListener('change',()=>onColChange(gi,si,colSel.value,szSel));
-    szSel.addEventListener('change',()=>{st.size=szSel.value.replace('mm','');gen()});
-    cntIn.addEventListener('input',()=>{st.count=+cntIn.value;gen()});
-    rmSt.addEventListener('click',()=>onRmSt(gi,si));
-
-    srow.appendChild(colSel);srow.appendChild(szSel);srow.appendChild(cntIn);srow.appendChild(rmSt);
-    wrap.appendChild(srow);
-  });
-
-  // add stapler button
-  const addStBtn=document.createElement('button');addStBtn.className='f-add-st';addStBtn.textContent='＋ 스테플러 추가';
-  addStBtn.addEventListener('click',()=>onAddSt(gi));
-  wrap.appendChild(addStBtn);
-  return wrap;
-}
-
-/* Fissure group ops */
-function renderFissures(){
-  const el=document.getElementById('fissure-list');el.innerHTML='';
-  S.fGroups.forEach((_,gi)=>{
-    el.appendChild(makeFGroupEl(
-      S.fGroups, gi,
-      (i)=>{S.fGroups.splice(i,1);renderFissures();gen()},
-      (i)=>{const pc=defPC();S.fGroups[i].staples.push({color:pc,size:'60',count:1});renderFissures();gen()},
-      (i,si)=>{S.fGroups[i].staples.splice(si,1);renderFissures();gen()},
-      (i,si,color,szSel)=>{
-        S.fGroups[i].staples[si].color=color;
-        const ss=sizesFor(S.brand,color);
-        if(!ss.includes(S.fGroups[i].staples[si].size))S.fGroups[i].staples[si].size=ss[0];
-        szSel.innerHTML=szOpts(S.brand,color,S.fGroups[i].staples[si].size);
-        gen();
-      }
-    ));
+/* ═══ LN ═══ */
+function renderLN(){
+  const w=document.getElementById('ln-chips');w.innerHTML='';
+  LN_ALL.forEach(n=>{
+    const c=el('div','chip sm'+(S.ln.has(n)?' sel':''),'#'+n);
+    c.onclick=()=>{S.ln.has(n)?S.ln.delete(n):S.ln.add(n);c.classList.toggle('sel');gen()};
+    w.appendChild(c);
   });
 }
-function addFissureGroup(){
-  const alt=S.brand==='Echelon'?'Blue':'Purple';
-  S.fGroups.push({label:'Fissure division',staples:[{color:'Gold',size:'45',count:1},{color:alt,size:'60',count:1}]});
-  renderFissures();gen();
-}
-function renderParenchyma(){
-  const el=document.getElementById('parenchyma-list');if(!el)return;el.innerHTML='';
-  S.pGroups.forEach((_,gi)=>{
-    el.appendChild(makeFGroupEl(
-      S.pGroups, gi,
-      (i)=>{S.pGroups.splice(i,1);renderParenchyma();gen()},
-      (i)=>{const pc=defPC();S.pGroups[i].staples.push({color:pc,size:'60',count:1});renderParenchyma();gen()},
-      (i,si)=>{S.pGroups[i].staples.splice(si,1);renderParenchyma();gen()},
-      (i,si,color,szSel)=>{
-        S.pGroups[i].staples[si].color=color;
-        const ss=sizesFor(S.brand,color);
-        if(!ss.includes(S.pGroups[i].staples[si].size))S.pGroups[i].staples[si].size=ss[0];
-        szSel.innerHTML=szOpts(S.brand,color,S.pGroups[i].staples[si].size);
-        gen();
-      }
-    ));
-  });
-}
-function addParenchymaGroup(){
-  const pc=defPC();
-  S.pGroups.push({label:'Parenchyma division',staples:[{color:pc,size:'60',count:1}]});
-  renderParenchyma();gen();
-}
 
-/* Prior wedge group ops */
-function renderPwGroups(){
-  const el=document.getElementById('pw-f-list');el.innerHTML='';
-  S.pwGroups.forEach((_,gi)=>{
-    el.appendChild(makeFGroupEl(
-      S.pwGroups, gi,
-      (i)=>{S.pwGroups.splice(i,1);renderPwGroups();gen()},
-      (i)=>{const pc=defPC();S.pwGroups[i].staples.push({color:pc,size:'60',count:1});renderPwGroups();gen()},
-      (i,si)=>{S.pwGroups[i].staples.splice(si,1);renderPwGroups();gen()},
-      (i,si,color,szSel)=>{
-        S.pwGroups[i].staples[si].color=color;
-        const ss=sizesFor(S.brand,color);
-        if(!ss.includes(S.pwGroups[i].staples[si].size))S.pwGroups[i].staples[si].size=ss[0];
-        szSel.innerHTML=szOpts(S.brand,color,S.pwGroups[i].staples[si].size);
-        gen();
-      }
-    ));
-  });
-}
-function addPwGroup(){
-  const pc=defPC();
-  S.pwGroups.push({label:'Wedge parenchyma division',staples:[{color:pc,size:'60',count:1}]});
-  renderPwGroups();gen();
-}
+function renderAll(){renderGroups('fissure-list',S.fGroups);renderGroups('paren-list',S.pGroups);renderVessels();renderPw();renderLN();gen()}
 
-/* ════ DEFAULTS ════ */
-function defaultFGroups(){
-  // Fissure only (oblique/horizontal fissure division)
-  const alt=S.brand==='Echelon'?'Blue':'Purple';
-  if(S.opType==='lobectomy')return[
-    {label:'Fissure division',staples:[{color:'Gold',size:'45',count:1},{color:alt,size:'60',count:1}]}
-  ];
-  if(S.opType==='segmentectomy')return[
-    {label:'Fissure division',staples:[{color:'Gold',size:'45',count:1}]}
-  ];
-  return[];
-}
-function defaultPGroups(){
-  // Parenchyma / intersegmental plane division
-  const pc=defPC(),alt=S.brand==='Echelon'?'Blue':'Purple';
-  if(S.opType==='lobectomy')return[];
-  if(S.opType==='segmentectomy')return[
-    {label:'Intersegmental plane division',staples:[{color:pc,size:'60',count:1},{color:alt,size:'60',count:1}]}
-  ];
-  if(S.opType==='wedge')return[
-    {label:'Parenchyma division',staples:[{color:pc,size:'60',count:1}]}
-  ];
-  return[];
-}
-function defaultPwGroups(){
-  const pc=defPC();
-  return[{label:'Wedge parenchyma division',staples:[{color:pc,size:'60',count:1}]}];
-}
-
-function rebuildAll(){
-  S.vessels=defaultVessels();
-  S.fGroups=defaultFGroups();
-  S.pGroups=defaultPGroups();
-  S.pwGroups=defaultPwGroups();
-  renderVessels();renderFissures();renderParenchyma();renderPwGroups();gen();
-}
-
-/* ════ CHIP HELPERS ════ */
-function pick(key,el,val){
-  el.parentElement.querySelectorAll('.chip').forEach(c=>c.classList.remove('sel'));
-  el.classList.add('sel');S[key]=val;
-  if(key==='glue')       document.getElementById('glue-qty').style.display=val==='yes'?'flex':'none';
-  if(key==='adh')        document.getElementById('adh-qty').style.display=val!=='none'?'flex':'none';
-  if(key==='priorWedge') document.getElementById('pw-detail').style.display=val==='yes'?'block':'none';
+/* ═══ SELECTION ═══ */
+function selOnly(e){e.parentElement.querySelectorAll('.chip').forEach(c=>c.classList.remove('sel'));e.classList.add('sel')}
+function pick(key,e,val){
+  selOnly(e);S[key]=val;
+  if(key==='glue')document.getElementById('glue-qty').style.display=val==='yes'?'flex':'none';
+  if(key==='adh')document.getElementById('adh-qty').style.display=val!=='none'?'flex':'none';
+  if(key==='priorWedge')document.getElementById('pw-detail').style.display=val==='yes'?'block':'none';
   gen();
 }
-function pickPath(el,val){
-  document.querySelectorAll('#pw-path-chips .chip').forEach(c=>c.classList.remove('sel'));
-  el.classList.add('sel');S.pwPath=val;gen();
+function pickType(e,type){
+  selOnly(e);S.opType=type;S.lobe='';S.seg=null;
+  document.getElementById('lobe-sec').style.display='';
+  document.querySelectorAll('#lobe-chips .chip').forEach(c=>c.classList.remove('sel'));
+  document.getElementById('seg-wrap').style.display='none';
+  document.getElementById('icg-sec').style.display=type==='segmentectomy'?'':'none';
+  document.getElementById('pw-wrap').style.display=type==='wedge'?'none':'';
+  S.ln=new Set();rebuildAll();
 }
-function pickType(el,type){
-  document.querySelectorAll('#type-chips .chip').forEach(c=>c.classList.remove('sel'));
-  el.classList.add('sel');S.opType=type;S.lobe='';S.seg='';
-  ['lob-sec','seg-sec','wedge-sec'].forEach(id=>document.getElementById(id).style.display='none');
-  if(type==='lobectomy')    document.getElementById('lob-sec').style.display='';
-  if(type==='segmentectomy')document.getElementById('seg-sec').style.display='';
-  if(type==='wedge')        document.getElementById('wedge-sec').style.display='';
-  document.querySelectorAll('#lob-chips .chip,#wedge-chips .chip').forEach(c=>c.classList.remove('sel'));
-  const sl=document.getElementById('seg-lobe');if(sl)sl.value='';
-  document.getElementById('seg-chips').innerHTML='';
-  const ss2=document.getElementById('seg-sub');if(ss2)ss2.style.display='none';
-  document.getElementById('prior-wedge-wrap').style.display=(type==='lobectomy'||type==='segmentectomy')?'':'none';
-  S.ln=new Set();renderLN();rebuildAll();
-}
-function pickLobe(el,lobe){
-  el.parentElement.querySelectorAll('.chip').forEach(c=>c.classList.remove('sel'));
-  el.classList.add('sel');S.lobe=lobe;S.seg='';
-  setLNDef(lobe);rebuildAll();
-}
-function updateSegList(){
-  const lobe=document.getElementById('seg-lobe').value;S.lobe=lobe;S.seg='';
-  const wrap=document.getElementById('seg-chips'),sub=document.getElementById('seg-sub');
-  wrap.innerHTML='';
-  if(!lobe){sub.style.display='none';setLNDef('');rebuildAll();return;}
-  sub.style.display='';
-  (SEG_MAP[lobe]||[]).forEach(seg=>{
-    const d=document.createElement('div');d.className='chip';d.textContent=seg;
-    d.onclick=()=>{wrap.querySelectorAll('.chip').forEach(c=>c.classList.remove('sel'));d.classList.add('sel');S.seg=seg;setLNDef(lobe);rebuildAll();};
-    wrap.appendChild(d);
-  });
-  setLNDef(lobe);rebuildAll();
-}
-
-/* ════ GENERATE ════ */
-function getSide(l){return l&&l.startsWith('R')?'Rt':'Lt'}
-function getPos(l){if(!l)return'';return l.startsWith('R')?'Lt. lateral decubitus position':'Rt. lateral decubitus position'}
-function getPort(){if(!S.port||!PORT[S.port])return{cam:'___',work:'___'};return PORT[S.port][getSide(S.lobe)]||{cam:'___',work:'___'}}
-
-function fGroupLine(brand,g){
-  if(!g.staples.length)return null;
-  const parts=g.staples.map(st=>`${st.color} ${st.size}mm *${st.count}ea`).join(' + ');
-  return`  ${g.label} using ${brand} ${parts}.`;
-}
-
-function vesselLine(brand,v){
-  const hasStaple=v.count>0;
-  if(!hasStaple&&v.hem){
-    return`  ${v.label} with Hem-o-lok ligation.`;
+function pickLobe(e,lobe){
+  selOnly(e);S.lobe=lobe;S.seg=null;
+  S.ln=new Set(S.opType==='wedge'?[]:LN_DEFAULT[lobe]);
+  if(S.opType==='segmentectomy'){
+    const w=document.getElementById('seg-chips');w.innerHTML='';
+    SEG_MAP[lobe].forEach(sg=>{
+      const c=el('div','chip sm',`${sg[0]} (${sg[1]})`);
+      c.onclick=()=>{selOnly(c);S.seg=sg;rebuildAll()};
+      w.appendChild(c);
+    });
+    document.getElementById('seg-wrap').style.display='';
   }
-  let line=`  ${v.label} using ${brand} ${v.color} ${v.size}mm *${v.count}ea`;
-  if(v.hem) line+=` with Hem-o-lok ligation`;
-  return line+'.';
+  rebuildAll();
 }
 
+/* ═══ OUTPUT ═══ */
+function stapleText(arr){return arr.map((s,i)=>`${i===0?S.brand+' ':''}${s.color} ${s.size}mm *${s.count}ea`).join(' + ')}
+function groupLine(g){return g.staples.length?`  ${g.label} using ${stapleText(g.staples)}.`:`  ${g.label}.`}
+function vesselLine(v){
+  if(v.count<=0)return v.hem?`  ${v.label} with Hem-o-lok ligation.`:`  ${v.label}.`;
+  return`  ${v.label} using ${S.brand} ${v.color} ${v.size}mm *${v.count}ea${v.hem?' with Hem-o-lok ligation':''}.`;
+}
 function gen(){
   const out=document.getElementById('output');
-  const{opType,lobe,seg,brand,frPar,frBr,frPath,ln,vessels,pwGroups,tachosil,glue,adh,welpass,tr,priorWedge,pwPath}=S;
-  if(!opType||!lobe){out.innerHTML='<div class="placeholder">👈 왼쪽에서<br>옵션을 선택하면<br>자동 생성됩니다.</div>';return;}
-  const port=getPort(),pos=getPos(lobe),L=[];
+  if(!S.opType||!S.lobe){out.innerHTML='<div class="placeholder">👈 왼쪽에서<br>수술 종류와 엽을 선택하면<br>자동 생성됩니다.</div>';return}
+  const L=[],lobe=S.lobe,port=PORT[S.port]||{cam:'___',work:'___'};
+  let op=S.opType==='lobectomy'?`${lobe} lobectomy`:S.opType==='segmentectomy'?`${lobe} ${segName()?segName()+' ':''}segmentectomy`:`${lobe} wedge resection`;
 
   L.push('* Preparation');
   L.push('  General ane with double lumen ET tube');
-  if(pos)L.push(`  ${pos}`);
+  L.push(`  ${lobe.startsWith('R')?'Lt.':'Rt.'} lateral decubitus position`);
   L.push('  Routine drapping');
   L.push('* Ports insertion (VATS, 3 ports)');
   L.push(`  Camera port  : ${port.cam}`);
   L.push(`  Working port : ${port.work}`);
 
-  let opLabel='';
-  if(opType==='lobectomy')opLabel=`${lobe} lobectomy`;
-  else if(opType==='segmentectomy'){const s=seg?` ${seg.split(' ')[0]} segmentectomy`:' segmentectomy';opLabel=`${lobe}${s}`;}
-  else opLabel=`${lobe} wedge resection`;
-
-  if(priorWedge==='yes'&&(opType==='lobectomy'||opType==='segmentectomy')){
-    L.push('* Prior wedge resection');
-    pwGroups.forEach(g=>{const fl=fGroupLine(brand,g);if(fl)L.push(fl);});
-    L.push(`  Intraoperative frozen section confirmed ${pwPath}.`);
-    L.push(`  Proceeded to definitive ${opLabel}.`);
+  if(S.priorWedge==='yes'&&S.opType!=='wedge'){
+    L.push('* Wedge resection');
+    L.push(`  ${lobe} wedge resection using ${S.pwStaples.length?stapleText(S.pwStaples):'___'}.`);
+    L.push(`  Frozen Bx : ${S.pwPath} → proceeded to ${op}.`);
   }
 
-  L.push(`* ${opLabel} was performed (VATS)`);
-  // Fissure first
-  S.fGroups.forEach(g=>{const fl=fGroupLine(brand,g);if(fl)L.push(fl);});
-  // Vessels & bronchus
-  vessels.forEach(v=>L.push(vesselLine(brand,v)));
-
-  // Frozen
-  const frs=[];
-  if(frPar!=='none')frs.push(`parenchymal margin malignancy (${frPar==='neg'?'-':'+'})`);
-  if(frBr!=='none') frs.push(`bronchial margin malignancy (${frBr==='neg'?'-':'+'})`);
-  if(frs.length){
-    let frozenLine=`  Frozen Bx : ${frs.join(', ')}`;
-    if(frPath!=='none') frozenLine+=` [${frPath}]`;
-    L.push(frozenLine);
+  L.push(`* ${op} was performed (VATS)`);
+  S.fGroups.forEach(g=>L.push(groupLine(g)));
+  S.vessels.forEach(v=>L.push(vesselLine(v)));
+  if(S.opType==='segmentectomy'&&S.icg==='yes')L.push('  ICG was injected intravenously to identify the intersegmental plane.');
+  S.pGroups.forEach(g=>L.push(groupLine(g)));
+  const fr=[];
+  if(S.frPar!=='none')fr.push(`parenchymal margin malignancy (${S.frPar==='neg'?'-':'+'})`);
+  if(S.frBr!=='none'&&S.opType!=='wedge')fr.push(`bronchial margin malignancy (${S.frBr==='neg'?'-':'+'})`);
+  if(fr.length||S.frPath!=='none'){
+    let line='  Frozen Bx : '+(S.frPath!=='none'?S.frPath+(fr.length?', ':''):'')+fr.join(', ');
+    L.push(line);
   }
-  // Parenchyma last
-  S.pGroups.forEach(g=>{const fl=fGroupLine(brand,g);if(fl)L.push(fl);});
 
-  const lnArr=LN_ALL.filter(n=>ln.has(n));
-  if(lnArr.length){L.push('* LN dissection was performed');L.push(`  LN ${lnArr.map(n=>'#'+n).join(', ')} were dissected.`);}
+  const ln=LN_ALL.filter(n=>S.ln.has(n));
+  if(ln.length){L.push('* LN dissection was performed');L.push(`  LN ${ln.map(n=>'#'+n).join(', ')} were dissected.`)}
 
   L.push('* Closure');
   L.push('  Irrigation and air leak test (-)');
+  if(S.tachosil==='yes')L.push('  Tachosil applied on bronchial stump site.');
+  if(S.glue==='yes')L.push(`  Fibrin glue applied on LN dissection site *${parseInt(document.getElementById('glue-n').value)||1}ea.`);
+  if(S.progel==='yes')L.push('  Progel applied on air leak site.');
+  if(S.adh!=='none')L.push(`  ${S.adh} *${parseInt(document.getElementById('adh-n').value)||1}ea applied.`);
+  if(S.welpass==='yes')L.push('  Welpass inj.');
   L.push('  Chest tube 24Fr insertion');
-  if(tachosil==='yes')L.push('  Tachosil applied on bronchial stump site.');
-  if(glue==='yes'){const n=parseInt(document.getElementById('glue-n').value)||1;L.push(`  Fibrin glue applied on LN dissection site (${n}개).`);}
-  if(adh!=='none'){const n=parseInt(document.getElementById('adh-n').value)||1;L.push(`  ${adh} ${n}ea applied.`);}
-  if(welpass==='yes')L.push('  Welpass inj. was administered.');
   L.push('  Wound closure layer by layer');
-  L.push(`  Transferred to ${tr} after extubation.`);
-
+  L.push(`  Transferred to ${S.tr}`);
   out.textContent=L.join('\n');
 }
-
 function doCopy(){
-  const t=document.getElementById('output').textContent;
-  if(!t.trim())return;
-  navigator.clipboard.writeText(t).then(()=>{
-    const b=document.getElementById('copy-btn');
-    b.textContent='✅ 복사 완료';b.classList.add('done');
-    setTimeout(()=>{b.textContent='📋 복사';b.classList.remove('done');},2000);
-  });
+  const t=document.getElementById('output').textContent;if(!t.trim())return;
+  navigator.clipboard.writeText(t).then(()=>{const b=document.getElementById('copy-btn');b.textContent='✅ 복사 완료';b.classList.add('done');setTimeout(()=>{b.textContent='📋 복사';b.classList.remove('done')},1800)});
 }
-
-// INIT
-renderVessels();renderFissures();renderParenchyma();renderPwGroups();renderLN();gen();
+renderAll();
 </script>
 </body>
 </html>
